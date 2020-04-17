@@ -36,4 +36,17 @@ If you want _consistent spacing_ use rem for padding/margin.
 
 Adding a fixed max-width can help make design on bigger screen look better. You can combine it with a width in percentage.
 
+### Notes day 4 - Extra-curricular: Viewport units
+
+vh: viewport height --> 100vh = 100% of the viewport height --> can cause issues on mobile.
+vw: viewport width --> percentage of the full viewport width.
+vmin: viewport minimum --> percentage of viewport width or height, whichever is smaller.
+vmax: viewport maximum --> percentage of viewport width or height, whichever is larger.
+
+### Challenge 3
+
+- No starter files this time.
+- Build a given design.
+- The button is a link, which looks like a button.
+
 For more info: https://courses.kevinpowell.co/courses/conquering-responsive-layouts
