@@ -1,0 +1,123 @@
+/* 
+////// For this challenge ///////
+
+- You will have to modify the HTML
+
+- You can add new classes in the HTML
+  if you need to
+
+// Requirements
+1. The headings in the first row must be
+   a different color
+2. The two .col at the bottom must go next
+   to one another
+3. The section at the bottom should have
+   a dark background color and a different
+   color of text
+4. I've removed the "gap" that I created,
+   so you'll have to add it back in
+
+   */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.3rem;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 2.25rem;
+}
+p {
+  font-size: 1.3125rem;
+}
+
+.container {
+  width: 80%;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.row {
+  /* display: flex => flex container */
+  display: flex;
+  padding: 3rem 0;
+
+  /* can't use yet */
+  /* gap: 100px; */
+}
+
+.col {
+  /* these are now flex items */
+  width: 100%;
+  text-align: center;
+}
+
+/* 4. Add margin on left side of col element with col element next to it.
+In other words: add margin to left side of last to elements in the row of three elements */
+.col + .col {
+  margin: 0 0 0 2rem;
+}
+
+.hero {
+  padding: 100px 0;
+  background-color: #23424a;
+  color: #fff;
+}
+
+.hero__text {
+  width: 60%;
+}
+
+.hero p {
+  margin-bottom: 3em;
+}
+
+.btn {
+  display: inline-block;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #23424a;
+  font-weight: 900;
+  background-color: #38cfd9;
+  padding: 0.75em 2em;
+  border-radius: 100px;
+}
+
+.btn:hover,
+.btn:focus {
+  opacity: 0.75;
+}
+
+/* 1. The headings in the first row must be
+   a different color */
+.col__header--purple {
+  color: #87629a;
+}
+
+/* 3. The section at the bottom should have
+   a dark background color and a different
+   color of text */
+
+.container--green {
+  background: #136c72;
+}
+
+.row__wrapper {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.col__text--white {
+  color: #fff;
+}

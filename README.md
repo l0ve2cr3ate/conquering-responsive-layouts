@@ -43,10 +43,63 @@ vw: viewport width --> percentage of the full viewport width.
 vmin: viewport minimum --> percentage of viewport width or height, whichever is smaller.
 vmax: viewport maximum --> percentage of viewport width or height, whichever is larger.
 
-### Challenge 3
+### Day 5 - Challenge 3
 
 - No starter files this time.
 - Build a given design.
 - The button is a link, which looks like a button.
+
+### Notes Day 6 - Review
+
+- use percentages for width
+- avoid setting height
+- use max-width to limit space content can take up
+
+**Why you shouldn't use `em's` for fontsize**
+--> em's compound on each other --> they look at parent font-size to know what to be set to. If the parent is 1.125em and the child is 1.125em these values get compounded: 1.125 \* 1.125.
+--> use rems instead for fontsize --> refers to root em (html) --> no compounding.
+
+**A tale of width and max-width**
+
+- `width: 600px; max-width: 100%`
+- `width: 100%; max-width: 600px`
+  --> same thing
+
+### Notes Day 7
+
+**BEM**: Block Element Modifier - CSS naming convention to prevent specificity issues.
+Example: card is _block_. It get's the class `.card`.
+Card image, title and content are _elements_ of the card, and get classes: `.card__image`, `.card__title`, `.card__content`. Light and dark are _modifiers_ and they get the classes: `.card--dark`, `.card--light`.
+
+**Box-sizing**
+Defaults to `content-box` --> padding, margin and border are added outside.
+`border-box` --> padding, margin and border are inside the element.
+
+### Notes Day 8 - Flexbox basics
+
+`display: flex`, creates a flex-container with `flex-direction: row`. It orders the items in the flex-container next to eachother in a row.
+--> Flex items shrink to smallest possible size: they take up as least space as they can.
+`width: 100%` makes flex-items take up the same size.
+
+**Adding space between columns**
+`gap: 100px` --> not yet supported.
+`.col + .col` --> _combinator_ --> selects col with col before it. You can use it together with margin-left to create space between the columns in your flex-row.
+
+### Flexbox challenge 1
+
+- Build design from design spec, starting with starter files.
+
+Requirements
+
+1. The headings in the first row must be
+   a different color
+2. The two .col at the bottom must go next
+   to one another
+3. The section at the bottom should have
+   a dark background color and a different
+   color of text
+4. I've removed the "gap" that I created,
+   so you'll have to add it back in
+5. Columns should be center aligned.
 
 For more info: https://courses.kevinpowell.co/courses/conquering-responsive-layouts
