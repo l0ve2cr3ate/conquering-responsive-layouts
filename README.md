@@ -102,4 +102,62 @@ Requirements
    so you'll have to add it back in
 5. Columns should be center aligned.
 
+### Day 9 - A deeper dive into flexbox
+
+**Reducing the amount of HTML needed**
+
+```css
+<div class="container">
+   <div class="row">
+      <div class="col>
+         content
+      </div>
+   </div>
+</div>
+```
+
+can be reduced to:
+
+```css
+<div class="container row">
+   <div class="col>
+      content
+   </div>
+</div>
+```
+
+You could rename class row to flex.
+
+**Adding a hero image**
+Images are distorted/strechted by flexbox.
+You could solve this by wrapping the image in a div, or adding a class to the image with `align-self: flex-start` on it.
+
+**Column widths and flexbox**
+`width: 100%` --> flex-items will take up available space and are same size.
+If you have 2 flex-items, and one has a width of 30% and the other a width of 60% there is 10% space left.
+You can change the position of this space by adding `justify-content: space-between` (or something else) to flex-parent.
+
+**Ensuring the image is responsive**
+
+```css
+img {
+  max-width: 100%;
+}
+```
+
+will make image responsive. The image will never be bigger than 100% and shrink in size on smaller screens.
+
+### Flexbox challenge 2
+
+- Build design from design spec. Starter file is given, but only the hero contains code. The rest of the page needs to be build from scratch. The text for the website can be found in text.md file.
+
+Requirements
+
+1. Refer to the design specs for the
+   overall layout
+2. Add responsive image to the hero section.
+3. The image should line up with
+   the sidebar in the section
+   below
+
 For more info: https://courses.kevinpowell.co/courses/conquering-responsive-layouts
