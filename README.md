@@ -160,4 +160,49 @@ Requirements
    the sidebar in the section
    below
 
+### Notes day 10 Extra curricular - A deeper dive into flexbox
+
+**Flex-containers**
+
+- `flex-direction: row-reverse` --> reverses row order
+- `flex-direction` --> default = `row`
+- `flex-wrap` --> default = `no-wrap`
+- `flex-wrap: wrap` --> flex items stack on top of each other.
+- `flex-flow: row nowrap` --> shorthand for `flex-direction: row nowrap`
+- `justify-content` --> default = `flex-start` --> aligns content along the _main_ axis: left to right when `flex-direction: row`, top to bottom when `flex-direction: column`
+- `align-items` --> default = `stretch` --> aligns items along the \*cross-axis\*\*
+- `align-items: baseline` --> text lines up on same line on bottom of the text --> handy if font-size of items differs. Can help with aligning main area and aside.
+- `align-content` --> only works when there are multiple lines of content on cross-axis --> `align-items` aligns items one at a time, while `align-content` works more like `justify-content`
+
+**Flex-items** --> everything in flex-container
+
+- `flex-grow` --> default = 0 --> determines how big item is compared to other items
+- `flex-grow: 1` --> item grows max available space
+- `flex-shrink` --> default = 1 --> determines how small it is compared to other items
+- `flex-basis` --> how much room an item should take up --> behaves like max-width.
+- `flex: 0 1 250px` --> shorthand for
+
+```css
+flex-grow: 0;
+flex-shrink: 1;
+flex-basis: 250px;
+```
+
+- `flex: 250px` --> converts to `flex: 0 1 250px`
+- `align-self` --> aligns item on cross-axis
+- `order: 1` --> places item on the end
+- `order: 0` --> natural place of item (no change)
+- `order : -1` --> places item at the beginning
+
+### Notes day 11 Using flexbox for navigation
+
+--> use semantic markup --> main, section, aside for accessibility
+
+### Flexbox challenge 3
+
+Requirements
+
+1.  Get all the navigation items next to one another
+2.  Add a space between all the items
+
 For more info: https://courses.kevinpowell.co/courses/conquering-responsive-layouts
