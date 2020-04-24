@@ -1,0 +1,109 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@900&family=Roboto:wght@300;400&display=swap");
+
+:root {
+  --pink-light: #f3eed9;
+  --brown: #824936;
+  --dark-gray: #222c2a;
+  --font-family-body: "Roboto", sans-serif;
+  --font-family-title: "Playfair Display", serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-family-body);
+  font-weight: 400;
+  color: var(--dark-gray);
+}
+
+.container {
+  max-width: 1128px;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+}
+
+.hero {
+  min-height: 660px;
+  background: var(--pink-light);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero__subtitle {
+  text-transform: uppercase;
+  font-weight: 300;
+  font-size: 18px;
+  margin: 0;
+}
+
+.hero__title {
+  color: var(--brown);
+  font-size: 60px;
+  font-family: var(--font-family-title);
+  margin: 0;
+}
+
+.center {
+  text-align: center;
+}
+
+.left {
+  text-align: left;
+}
+
+.brown {
+  color: var(--brown);
+}
+
+.section__title {
+  font-size: 36px;
+  font-family: var(--font-family-title);
+  margin: 0 0 1rem;
+}
+
+.quality-section {
+  display: flex;
+  justify-content: center;
+  margin: 4rem 0;
+}
+
+.custom-section {
+  color: var(--pink-light);
+  background: var(--dark-gray);
+  padding: 4rem 0;
+}
+
+.care-section {
+  background: var(--brown);
+  color: var(--pink-light);
+  padding: 4rem 0;
+}
+
+.flex {
+  display: flex;
+  justify-content: space-around;
+}
+
+.section__paragraph {
+  width: 40%;
+}
+
+img {
+  max-width: 100%;
+}
+
+.img__container {
+  width: 40%;
+}
+
+.text__container {
+  width: 40%;
+}

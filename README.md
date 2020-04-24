@@ -205,4 +205,22 @@ Requirements
 1.  Get all the navigation items next to one another
 2.  Add a space between all the items
 
+### Notes day 12 Getting fancy with navigations
+
+To push one of the listitems to the side (like for example signup/signin), put class on the item and use `margin-left: auto`. Other solution: Put listitems you want to display on the right in a second ul. Give the nav:
+
+```css
+.nav {
+  display: flex;
+  justify-content: space-between;
+}
+```
+
+To have a navigation with logo on left, links on the left next to the logo and signin/signup on the right you can use `flex-grow: 1` on the nav. Logo is separate from the nav. The nav will be as big as it can be when there is room, and it will shrink when there is no room. `width: 100%` gives same result.
+To display logo on the left, links in the middle and signin/signup on the right, use margin: 0 auto to center the elements.
+
+### Flexbox challenge 4
+
+Build a given design starting from scratch. You can find the design and specs in the pdf in the flexbox-challenge-04 directory.
+
 For more info: https://courses.kevinpowell.co/courses/conquering-responsive-layouts
