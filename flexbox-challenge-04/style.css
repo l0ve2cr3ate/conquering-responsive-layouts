@@ -21,6 +21,8 @@ body {
 
 .container {
   max-width: 1128px;
+  margin: 0 auto;
+  width: 85%;
 }
 
 .column {
@@ -46,7 +48,7 @@ body {
 
 .hero__title {
   color: var(--brown);
-  font-size: 60px;
+  font-size: 50px;
   font-family: var(--font-family-title);
   margin: 0;
 }
@@ -87,23 +89,31 @@ body {
   padding: 4rem 0;
 }
 
-.flex {
-  display: flex;
-  justify-content: space-around;
-}
-
-.section__paragraph {
-  width: 40%;
-}
-
 img {
   max-width: 100%;
 }
 
-.img__container {
-  width: 40%;
-}
+@media screen and (min-width: 600px) {
+  .container {
+    width: 100%;
+  }
+  .section__paragraph {
+    width: 40%;
+  }
+  .image__container {
+    width: 40%;
+  }
 
-.text__container {
-  width: 40%;
+  .text__container {
+    width: 40%;
+  }
+
+  .flex {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .hero__title {
+    font-size: 60px;
+  }
 }
