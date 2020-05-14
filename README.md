@@ -223,4 +223,9 @@ To display logo on the left, links in the middle and signin/signup on the right,
 
 Build a given design starting from scratch. You can find the design and specs in the pdf in the flexbox-challenge-04 directory.
 
+### Nav challenge
+
+Make the navigation layout work on both mobile and large screens.
+Mobile-first, so mobile styles first,then add the large screen styles inside the existing media query
+
 For more info: https://courses.kevinpowell.co/courses/conquering-responsive-layouts

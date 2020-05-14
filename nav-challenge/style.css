@@ -1,0 +1,239 @@
+/* Challenge
+
+   Make the navigation layout work
+   on both mobile and large screens.
+
+   Mobile-first, so mobile styles first,
+   then add the large screen styles
+   inside the existing media query
+
+*/
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.3rem;
+}
+
+img {
+  max-width: 100%;
+}
+
+h1 {
+  font-size: 3rem;
+  margin-top: 0;
+}
+
+.section-title {
+  color: #87629a;
+}
+
+.btn {
+  display: inline-block;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #23424a;
+  font-weight: 900;
+  background-color: #38cfd9;
+  padding: 0.75em 2em;
+  border-radius: 100px;
+}
+
+.btn:hover,
+.btn:focus {
+  opacity: 0.75;
+}
+
+.container {
+  width: 80%;
+  max-width: 1100px;
+  margin: 0 auto;
+  /* added for nav-toggle positioning */
+  position: relative;
+}
+
+header {
+  background: #136c72;
+  padding: 1em 0;
+  text-align: center;
+}
+
+.nav {
+  width: 100%;
+}
+
+.nav-toggle {
+  cursor: pointer;
+  border: 0;
+  width: 3em;
+  height: 3em;
+  padding: 0em;
+  border-radius: 50%;
+  background: #072a2d;
+  color: white;
+  transition: opacity 250ms ease;
+
+  position: absolute;
+  left: 0;
+}
+
+.nav-toggle:focus,
+.nav-toggle:hover {
+  opacity: 0.75;
+}
+
+.hamburger {
+  width: 50%;
+  position: relative;
+}
+
+.hamburger,
+.hamburger::before,
+.hamburger::after {
+  display: block;
+  margin: 0 auto;
+  height: 3px;
+  background: white;
+}
+
+.hamburger::before,
+.hamburger::after {
+  content: "";
+  width: 100%;
+}
+
+.hamburger::before {
+  transform: translateY(-6px);
+}
+
+.hamburger::after {
+  transform: translateY(3px);
+}
+
+.nav {
+  visibility: hidden;
+  height: 0;
+  position: absolute;
+}
+
+.nav__list {
+  padding: 10px;
+}
+
+.nav__item {
+  list-style: none;
+  padding: 15px;
+}
+
+.nav__link {
+  text-decoration: none;
+  color: #dcfbfb;
+  text-transform: uppercase;
+  font-weight: 900;
+}
+
+.nav__link:hover {
+  opacity: 0.75;
+}
+
+.nav__link--button {
+  background: #fff;
+  border-radius: 25px;
+  padding: 5px 20px;
+  color: #136c72;
+}
+
+.nav--visible {
+  visibility: visible;
+  height: auto;
+  position: relative;
+}
+
+.logo {
+  height: 30px;
+}
+
+.hero {
+  padding: 100px 0;
+  background-color: #23424a;
+  color: #fff;
+}
+
+.hero__img {
+  margin-top: 2em;
+}
+
+.hero p {
+  margin-bottom: 3em;
+}
+
+.main {
+  margin-top: 3em;
+}
+
+.sidebar {
+  padding: 1em;
+  text-align: center;
+  color: #fff;
+  background-color: #136c72;
+}
+
+@media (min-width: 800px) {
+  .nav-toggle {
+    display: none;
+  }
+
+  .nav-container {
+    align-items: center;
+  }
+
+  .nav {
+    visibility: visible;
+    display: flex;
+    height: auto;
+    justify-content: space-between;
+    position: relative;
+  }
+
+  .nav__list {
+    display: flex;
+    padding: 0;
+  }
+
+  .nav__list--primary {
+    padding-left: 10px;
+  }
+
+  .nav__link--button {
+    white-space: nowrap;
+  }
+
+  .row {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .hero__text {
+    width: 62%;
+  }
+
+  .hero__img {
+    width: 32%;
+    align-self: flex-start;
+    margin: 0;
+  }
+
+  .primary-content {
+    width: 62%;
+  }
+
+  .sidebar {
+    width: 32%;
+  }
+}
