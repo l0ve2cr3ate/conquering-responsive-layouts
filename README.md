@@ -219,6 +219,17 @@ To push one of the listitems to the side (like for example signup/signin), put c
 To have a navigation with logo on left, links on the left next to the logo and signin/signup on the right you can use `flex-grow: 1` on the nav. Logo is separate from the nav. The nav will be as big as it can be when there is room, and it will shrink when there is no room. `width: 100%` gives same result.
 To display logo on the left, links in the middle and signin/signup on the right, use margin: 0 auto to center the elements.
 
+### Notes day 16 What breakpoints to use
+
+Design should dictate breakpoints: start with small screen and make it bigger to define breakpoints.
+
+### Notes day 21 Recap
+
+- websites are responsive without css
+- you can break responsiveness with css
+- often desktop-first approach breaks native HTML responsiveness
+- mobile-first approach is easier for making a website responsive --> you don't have to reset things to default, like you will have to do often when using desktop-first approach.
+
 ### Flexbox challenge 4
 
 Build a given design starting from scratch. You can find the design and specs in the pdf in the flexbox-challenge-04 directory.
@@ -227,5 +238,9 @@ Build a given design starting from scratch. You can find the design and specs in
 
 Make the navigation layout work on both mobile and large screens.
 Mobile-first, so mobile styles first,then add the large screen styles inside the existing media query
+
+### Final challenge
+
+Build a given design starting from scratch. Make it responsive, using mobile first approach. This time we use all what we have learned during the course to build a page with (responive) navigation, header, sections and footer.
 
 For more info: https://courses.kevinpowell.co/courses/conquering-responsive-layouts
