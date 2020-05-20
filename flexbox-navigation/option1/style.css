@@ -1,0 +1,39 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+body {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+.nav {
+  background: purple;
+  padding: 10px 0;
+}
+
+.nav__list {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  margin: 0;
+}
+
+.nav__item {
+  margin-right: 1rem;
+}
+
+.nav__link {
+  text-decoration: none;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.nav__link:hover {
+  opacity: 0.75;
+}
+
+.nav__link--button {
+  background: #fff;
+  color: purple;
+  padding: 2px 7px;
+  border-radius: 15px;
+}
