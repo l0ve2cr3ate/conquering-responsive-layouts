@@ -243,4 +243,27 @@ Mobile-first, so mobile styles first,then add the large screen styles inside the
 
 Build a given design starting from scratch. Make it responsive, using mobile first approach. This time we use all what we have learned during the course to build a page with (responive) navigation, header, sections and footer.
 
+## Course Review
+
+### 21 day challenge
+
+I followed the course Conquering Responsive Layouts by Kevin Powelll during the first iteration. This course is a 21 challenge to learn to create responsive websites, and is aimed at beginners. You will get an email to remind you when there is new course content. The course consists of small videos on the course website, and challenges with design specs to help you apply what you have learned. Not every day has a challenge. Some days you can use to catch up if you have fallen behind, and other days are to look at the solution of an earlier challenge.
+
+### Practice, practice, practice
+
+There is a Discord Channel in which you can share your challenge solutions, and ask questions. If you might fall behind for whatever reason, you can later pick up the course at your own time.
+The course is structured as a 21 day challenge to give you time to learn and practice, and not just binge-watch some content to forget about it later.
+
+### Course content
+
+The course is targeted at beginners, and explains fundamentals like percentages, max-width an the basics of flexbox. The quality of the content is great, and the challenges make sure you understand and practice what you have learned during the video lectures. The challenges let you build a given design (they are not code along). At the end of the course you will get some tips about where you can learn more and how to advance your knowledge.
+
+### New iteration
+
+At the moment (may 2020) Kevin Powell is adjusting the course content for future iterations. Keep an eye on the webiste if you are interested in future enrollment.
+
+### Summary
+
+Hands-on course to learn to build responsive layouts using flexbox. In the course challenges you will build (parts of) responsive websites yourself.
+
 For more info: https://courses.kevinpowell.co/courses/conquering-responsive-layouts
